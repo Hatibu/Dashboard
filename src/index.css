@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Philisopher";
+  src: local("Philisopher"),
+    url(./font/Philosopher-Regular.ttf) format("truetype");
+}
+
+@layer components {
+  .search-input {
+    @apply block rounded-md bg-gray-700 h-8 mt-10 w-56 ml-2;
+  }
+  .sidebar-menu {
+    @apply block text-lg mt-6 items-center;
+  }
+
+  .sidebar-icon {
+    @apply p-1.5 rounded-lg inline-block mr-2 text-white;
+  }
+  .logo {
+    @apply mt-4 lg:ml-6;
+  }
+  .toggle-menu {
+    @apply inline-block bg-gray-600 rounded-md absolute  top-0 ml-52 mt-4;
+  }
+  .navbar {
+    @apply flex justify-start items-center h-20 fixed w-full;
+  }
+}
